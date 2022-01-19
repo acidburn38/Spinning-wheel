@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: #000000;
+    border-radius: 50%;
+    border: 15px solid #000000;
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.container div{
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+    left:135px;
+}
+
+span{
+    position: absolute;
+    top:10%;
+}
+.container .one{
+    left:50%;
+    background-color: #f3a4e6;
+}
+.container .two{
+    background-color: #c7a2ff;
+    transform: rotate(45deg);
+}
+.container .three{
+    background-color: #f3a4e6;
+    transform: rotate(90deg);
+}
+.container .four{
+    background-color: #c7a2ff;
+    transform: rotate(135deg);
+}
+.container .five{
+    background-color: #f3a4e6;
+    transform: rotate(180deg);
+}
+.container .six{
+    background-color: #c7a2ff;
+    transform: rotate(225deg);
+}
+.container .seven{
+    background-color: #f3a4e6;
+    transform: rotate(270deg);
+}
+.container .eight{
+    background-color: #c7a2ff;
+    transform: rotate(315deg);
+} 
+
+.arrow{
+    position: fixed;
+    top:17%;
+    left:50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    top: 19%;
+}
+
+
+.arrow:before{
+    content:"V";
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:40px;
+}
+
+#spin{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    border: 8px solid #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000000 ;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
